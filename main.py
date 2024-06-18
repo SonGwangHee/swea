@@ -1,5 +1,14 @@
-# SWEA 7-23
+# SWEA 7-25
+bloodtypes = ['A', 'A', 'A', 'O', 'B', 'B', 'O', 'AB', 'AB', 'O']
 
-for i in range(1, 101):
-    if i % 2 == 0:
-        print(i, end=" ")
+totalDict = {}
+
+for bloodtype in bloodtypes:
+    if bloodtype in totalDict:
+        totalDict[bloodtype] += 1
+        print(bloodtype)
+    else:
+        totalDict[bloodtype] = 1
+
+print(totalDict)
+
