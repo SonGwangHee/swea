@@ -1,14 +1,10 @@
-# SWEA 7-25
-bloodtypes = ['A', 'A', 'A', 'O', 'B', 'B', 'O', 'AB', 'AB', 'O']
+# SWEA 7-27
+scores = [85, 65, 77, 83, 75, 22, 98, 88, 38, 100]
+total = 0
 
-totalDict = {}
+while scores:
+    score = scores.pop()
+    if score >= 80:
+        total += score
 
-for bloodtype in bloodtypes:
-    if bloodtype in totalDict:
-        totalDict[bloodtype] += 1
-        print(bloodtype)
-    else:
-        totalDict[bloodtype] = 1
-
-print(totalDict)
-
+print(total)
