@@ -1,4 +1,5 @@
-# SWEA 7-22
+# SWEA 7-23
 
 for i in range(1, 101):
-    print(i)
+    if i % 2 == 0:
+        print(i, end=" ")
